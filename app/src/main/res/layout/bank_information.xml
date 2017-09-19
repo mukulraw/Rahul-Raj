@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/cdcdcd_stroke"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:text="BANK INFORMATION"
+                android:gravity="center"
+                android:background="#e4e2e2"
+                android:layout_gravity="center_vertical"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank Name"
+                android:textColor="#000"
+                android:padding="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="18dp"
+                android:background="@drawable/cdcdcd"
+                android:padding="15dp"
+                android:id="@+id/name"
+                android:hint="Select Your name"
+                android:drawableEnd="@drawable/down"
+                android:drawablePadding="10dp"
+                android:textColor="#737272"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Branch Address"
+                android:id="@+id/mobile"
+                android:padding="2dp"
+                android:textColor="#000"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="18dp"
+                android:background="@drawable/cdcdcd"
+                android:padding="15dp"
+                android:id="@+id/address"
+                android:hint="Enter Branch Address "
+                android:textColor="#737272"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IFSC Code"
+                android:padding="2dp"
+                android:textColor="#000"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="18dp"
+                android:background="@drawable/cdcdcd"
+                android:padding="15dp"
+                android:id="@+id/ifsc"
+                android:hint="Enter IFSC Code"
+                android:textColor="#737272"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beneficiery Name"
+                android:textColor="#000"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="18dp"
+                android:background="@drawable/cdcdcd"
+                android:padding="15dp"
+                android:id="@+id/bn"
+                android:hint="Enter Your Password"
+                android:textColor="#737272"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account No."
+                android:padding="2dp"
+                android:textColor="#000"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="18dp"
+                android:background="@drawable/cdcdcd"
+                android:padding="15dp"
+                android:id="@+id/an"
+                android:hint="Enter Account No."
+                android:textColor="#737272"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="18dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_stroke"
+            android:textColor="#ffffff"
+            android:text="Continue"
+            android:id="@+id/button1"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"/>
+    </LinearLayout>
+</ScrollView>

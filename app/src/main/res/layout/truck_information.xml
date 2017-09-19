@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/cdcdcd_stroke"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:text="TRUCK INFORMATION"
+                android:gravity="center"
+                android:background="#e4e2e2"
+                android:layout_gravity="center_vertical"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select truck type"
+                android:textColor="#000"
+                android:padding="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="18dp"
+                android:background="@drawable/cdcdcd"
+                android:padding="15dp"
+                android:id="@+id/tt"
+                android:hint="Truck Type"
+                android:drawableEnd="@drawable/down"
+                android:drawablePadding="10dp"
+                android:textColor="#737272"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Load Passing"
+                android:textColor="#000"
+                android:padding="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="18dp"
+                android:background="@drawable/cdcdcd"
+                android:padding="15dp"
+                android:hint="No.of tons"
+                android:drawableEnd="@drawable/down"
+                android:drawablePadding="10dp"
+                android:textColor="#737272"
+                android:textSize="12sp"
+                android:id="@+id/lp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Operate your route"
+                android:textColor="#000"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="18dp"
+                android:background="@drawable/cdcdcd"
+                android:padding="15dp"
+                android:hint="Enter route"
+                android:id="@+id/route"
+                android:textColor="#737272"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Truck Permit"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="File goes here name"
+                        android:id="@+id/file1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="10dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/upload"
+                    android:layout_weight="2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Image"
+                        android:padding="10dp"
+                        android:drawableStart="@drawable/camera"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/cdcdcd_back"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingStart="18dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Truck Registration No."
+                android:textColor="#000"
+                android:padding="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="18dp"
+                android:background="@drawable/cdcdcd"
+                android:padding="15dp"
+                android:hint="Enter No."
+                android:id="@+id/registration"
+                android:drawableEnd="@drawable/down"
+                android:drawablePadding="10dp"
+                android:textColor="#737272"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="File goes here name"
+                        android:id="@+id/file2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="10dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:id="@+id/upload2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Image"
+                        android:padding="10dp"
+                        android:drawableStart="@drawable/camera"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/cdcdcd_back"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingStart="18dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Truck Validity"
+                android:textColor="#000"
+                android:padding="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="18dp"
+                android:background="@drawable/cdcdcd"
+                android:padding="15dp"
+                android:hint="Enter date"
+                android:id="@+id/date"
+                android:drawableEnd="@drawable/date"
+                android:drawablePadding="10dp"
+                android:textColor="#737272"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Truck Insurance"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="File goes here name"
+                        android:id="@+id/file3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="10dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:id="@+id/upload3">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Image"
+                        android:padding="10dp"
+                        android:drawableStart="@drawable/camera"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/cdcdcd_back"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingStart="18dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_stroke"
+            android:textColor="#ffffff"
+            android:text="Add Truck"
+            android:id="@+id/addtruck"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"/>
+
+    </LinearLayout>
+</ScrollView>

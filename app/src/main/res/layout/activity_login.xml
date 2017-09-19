@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.owaisinews.rahulrajput.Login">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/truct1"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dark_shade"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:padding="18dp"
+            android:text="LOG IN"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:hint="Username/Email"
+            android:id="@+id/user"
+            android:textColorHint="#ffffff"
+            android:background="@drawable/white_stroke"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="18dp"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:hint="Password"
+            android:id="@+id/pass"
+            android:textColorHint="#ffffff"
+            android:background="@drawable/white_stroke"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="18dp"
+            android:textColor="#ffffff"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keep me Login"
+            android:drawableStart="@drawable/checkbox"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:id="@+id/check"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="#ffffff"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_stroke"
+            android:padding="18dp"
+            android:textColor="#ffffff"
+            android:id="@+id/sign"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="18dp"
+            android:text="SIGN IN"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fotget password"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:id="@+id/forgot"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_marginStart="30dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="#F44336"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:id="@+id/create"
+            android:layout_marginTop="100dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
