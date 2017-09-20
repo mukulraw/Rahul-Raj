@@ -8,6 +8,9 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -62,29 +65,45 @@ public class MainActivity extends AppCompatActivity {
 
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction ft = fragmentManager.beginTransaction();
-                Profile fragment = new Profile();
-                ft.replace(R.id.replace, fragment);
-                ft.addToBackStack(null);
-                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
-                ft.commit();
-
-                toolbar.setTitle("PROFILE");
-            }
-        });
-        layout2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction ft = fragmentManager.beginTransaction();
                 Order fragment = new Order();
                 ft.replace(R.id.replace, fragment);
                 ft.addToBackStack(null);
                 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
                 ft.commit();
 
-                toolbar.setTitle("ORDER");
+                toolbar.setTitle("MY ORDER");
+            }
+        });
 
+        layout3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+                Booking fragment = new Booking();
+                ft.replace(R.id.replace, fragment);
+                ft.addToBackStack(null);
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
+                ft.commit();
+
+                toolbar.setTitle("BOOKING");
+
+            }
+        });
+        layout4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+                ContactUs fragment = new ContactUs();
+                ft.replace(R.id.replace, fragment);
+                ft.addToBackStack(null);
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
+                ft.commit();
+
+                toolbar.setTitle("CONTACT US");
             }
         });
 
@@ -101,9 +120,50 @@ public class MainActivity extends AppCompatActivity {
                 ft.commit();
 
                 toolbar.setTitle("ADDRESS");
-
             }
         });
 
+
+
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu , menu);
+        return true;
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+
+        if (id == R.id.logout)
+        {
+
+        }
+        else if (id == R.id.home)
+        {
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction ft = fragmentManager.beginTransaction();
+            Home fragment = new Home();
+            ft.replace(R.id.replace, fragment);
+            ft.addToBackStack(null);
+            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
+            ft.commit();
+
+
+        }
+
+
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        toolbar.setTitle("HOME");
     }
 }

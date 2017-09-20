@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text="POST A LOAD"
+        android:paddingStart="18dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Source"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/enter"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/cdcdcd_stroke"
+        android:layout_gravity="center_vertical"
+        android:drawableEnd="@drawable/menu_down"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Destination"
+        android:padding="10dp"
+        android:id="@+id/choose"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/cdcdcd_stroke"
+        android:layout_gravity="center_vertical"
+        android:drawableEnd="@drawable/menu_down"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Type"
+        android:padding="10dp"
+        android:id="@+id/vehicle"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/cdcdcd_stroke"
+        android:layout_gravity="center_vertical"
+        android:drawableEnd="@drawable/menu_down"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Material Type"
+        android:padding="10dp"
+        android:id="@+id/material"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/cdcdcd_stroke"
+        android:layout_gravity="center_vertical"
+        android:drawableEnd="@drawable/menu_down"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight(MT)"
+        android:padding="10dp"
+        android:id="@+id/weight"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/cdcdcd_stroke"
+        android:layout_gravity="center_vertical"
+        android:drawableEnd="@drawable/menu_down"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No.of Vehicle"
+        android:padding="10dp"
+        android:id="@+id/novehicle"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/cdcdcd_stroke"
+        android:layout_gravity="center_vertical"
+        android:drawableEnd="@drawable/menu_down"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tap"
+        android:padding="10dp"
+        android:id="@+id/schdule"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/cdcdcd_stroke"
+        android:layout_gravity="center_vertical"
+        android:drawableEnd="@drawable/menu_down"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHECK FARE"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:id="@+id/checkfare"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/button_stroke"
+        android:layout_gravity="center_vertical"
+        />
+
+</LinearLayout>
+
+</ScrollView>

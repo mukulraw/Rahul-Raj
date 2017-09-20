@@ -36,6 +36,14 @@ public class Login extends AppCompatActivity {
         forgot = (TextView)findViewById(R.id.forgot);
         signin = (Button) findViewById(R.id.sign);
         create = (TextView) findViewById(R.id.create);
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login .this , MainActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
         create.setOnClickListener(new View.OnClickListener() {
             @Override
